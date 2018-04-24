@@ -1,3 +1,22 @@
+#! /usr/bin/env ruby
+#
+# check-print-queue-length
+#
+# DESCRIPTION:
+#   a check to see if any print queue has a large amount of documents waiting to print
+# OUTPUT:
+#   Plain text
+#
+# PLATFORMS:
+#   Windows
+#
+# DEPENDENCIES:
+#   gem: sensu-plugin
+#   gem: win32ole
+# LICENSE:
+#   Released under the same terms as Sensu (the MIT license); see LICENSE
+#   for details.
+#
 require 'sensu-plugin/check/cli'
 
 class PrintQueueLength < Sensu::Plugin::Check::CLI
