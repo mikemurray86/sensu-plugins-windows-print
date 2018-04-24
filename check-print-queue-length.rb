@@ -8,11 +8,11 @@ class PrintQueueLength < Sensu::Plugin::Check::CLI
     option :warn,
         long: '--warning',
         short: '-w VAL',
-        default: 3
+        default: 4
     option :crit,
         long: '--critical',
         short: '-c VAL',
-        default: 10
+        default: 8
 
     def run
         require 'win32ole'
